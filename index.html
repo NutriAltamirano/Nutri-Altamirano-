@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición Deportiva - Rodrigo Altamirano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra superior fija -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="mailto:rodrigoaltamirano924@gmail.com">
+                <img src="images/gmail-icono.png" alt="Gmail" class="icon"> rodrigoaltamirano924@gmail.com
+            </a>
+            <a href="https://wa.me/525572686688" target="_blank">
+                <img src="images/whatsapp-icono.png" alt="Whatsapp" class="icon"> +52 55 72 68 06 88
+            </a>
+        </div>
+        <div class="navbar-right">
+            <span>Nut Rodrigo Altamirano</span>
+        </div>
+    </div>
+
+    <!-- Barra de bienvenida -->
+    <div class="welcome-bar">
+        <h1>¡INICIA EL CAMBIO HOY!</h1>
+        <p>Tratamientos adecuados a tu presupuesto</p>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="cta-buttons">
+        <a href="#" class="cta-button start-change">¡Inicia el cambio!</a>
+        <a href="#" class="cta-button patient">¡Soy paciente!</a>
+    </div>
+
+    <!-- Barra roja al final -->
+    <div class="cta-footer">
+        <a href="#" class="cta-footer-button" onclick="openIMCCalculator()">¿Mi peso es saludable? Descúbrelo</a>
+    </div>
+
+    <!-- Calculadora de IMC -->
+    <div id="imcCalculator" class="imc-calculator">
+        <div class="calculator-content">
+            <h2>Calculadora de IMC</h2>
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" placeholder="Ingresa tu peso" required>
+            <br><br>
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01" placeholder="Ingresa tu altura" required>
+            <br><br>
+            <button onclick="calculateIMC()">Calcular IMC</button>
+            <br><br>
+            <div id="imcResult"></div>
+            <br>
+            <button onclick="closeIMCCalculator()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
